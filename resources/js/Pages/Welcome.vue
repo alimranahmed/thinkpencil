@@ -10,7 +10,7 @@
             <list-card></list-card>
         </div>
 
-        <page-footer></page-footer>
+        <page-footer :can-login="canLogin" :can-register="canRegister" :auth="auth"></page-footer>
     </div>
 </template>
 
@@ -26,8 +26,6 @@ export default {
         canLogin: Boolean,
         canRegister: Boolean,
         errors: Object,
-        laravelVersion: String,
-        phpVersion: String,
     }
 }
 </script>

@@ -24,7 +24,12 @@
 
 <script>
 export default {
-    name: "PageFooter"
+    name: "PageFooter",
+    props: {
+        auth: Object,
+        canLogin: Boolean,
+        canRegister: Boolean,
+    },
 }
 </script>
 
